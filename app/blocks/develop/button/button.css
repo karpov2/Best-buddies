@@ -10,6 +10,7 @@
     cursor: pointer;
     transition: all .3s ease-in-out;
     outline: none;
+    background-color: transparent;
 }
 
 .button:hover {
