@@ -1,0 +1,8 @@
+.footer__contact {
+    flex: 1 1 0%;
+    max-width: 264px;
+
+    font-size: .875em;
+    letter-spacing: .03em;
+    color: #333235;
+}

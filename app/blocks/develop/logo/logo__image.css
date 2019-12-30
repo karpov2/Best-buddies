@@ -1,6 +1,5 @@
 .logo__image {
-  width: 5em;
-  height: 5em;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  display: block;
 }
