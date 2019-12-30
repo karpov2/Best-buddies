@@ -1,0 +1,6 @@
+.lead__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 80px 0;
+}

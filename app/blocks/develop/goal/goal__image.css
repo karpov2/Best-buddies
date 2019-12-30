@@ -1,0 +1,9 @@
+.goal__image {
+    flex-basis: 514px;
+    height: auto;
+    object-fit: cover;
+}
+
+.goal__image:nth-child(2n) {
+    order: 2;
+}

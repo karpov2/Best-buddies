@@ -1,0 +1,24 @@
+.lead__button {
+  width: 184px;
+  height: 56px;
+  border: 1px solid white;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  background: transparent;
+  color: white;
+  position: absolute;
+  left: 48px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.lead__button:hover {
+  background: white;
+  color: #5A3F98;
+}
