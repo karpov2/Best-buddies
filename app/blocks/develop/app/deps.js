@@ -8,6 +8,9 @@ module.exports = {
 	modules: [
 		{
 			import: 'normalize.css'
+		},
+		{
+			import: 'fonts.css'
 		}
 	],
 
