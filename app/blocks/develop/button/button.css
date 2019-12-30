@@ -1,0 +1,23 @@
+.button {
+    font-weight: bold;
+    font-size: .875em;
+    letter-spacing: .03em;
+    color: #FC691B;
+    border: .14em solid #FC691B;
+    padding: 1em 3.2em;
+    border-radius: .28em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #FC691B;
+    color: #fff;
+}
+
+.button:active {
+    background-color: #FC691B;
+    color: #000;
+}
