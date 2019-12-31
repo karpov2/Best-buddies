@@ -1,5 +1,5 @@
-.goal__image {
-    flex-basis: 514px;
+.slideshow__image {
+    width: 100%;
     height: auto;
     object-fit: cover;
 }

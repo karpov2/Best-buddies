@@ -1,0 +1,12 @@
+.text-paragraph {
+  background: white;
+  font-weight: normal;
+  font-size: 1.125em;
+  line-height: 1.33em;
+  letter-spacing: 0.25px;
+  margin: 0 0 25px 0;
+}
+
+.text-paragraph:last-child {
+  margin: 0;
+}
