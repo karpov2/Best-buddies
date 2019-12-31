@@ -1,63 +1,67 @@
 html *,
 html *:after,
 html *:before {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	border: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 0;
 }
 
 @font-face {
-    font-family: Helvetica;
-    src: local('Helvetica Neue Bold'),
-         local('HelveticaNeue-Bold'),
-         url(./helvetica/HelveticaNeueCyr-Bold.woff2) format('woff2'),
-         url(./helvetica/HelveticaNeueCyr-Bold.woff) format('woff'),
-         url(./helvetica/HelveticaNeueCyr-Bold.ttf) format('truetype'),
-         url(./helvetica/HelveticaNeueCyr-Bold.eot) format('opentype');
-    font-weight: bold;
-    font-display: swap;
+  font-family: Helvetica;
+  src: local("Helvetica Neue Bold"), local("HelveticaNeue-Bold"),
+    url(./helvetica/HelveticaNeueCyr-Bold.woff2) format("woff2"),
+    url(./helvetica/HelveticaNeueCyr-Bold.woff) format("woff"),
+    url(./helvetica/HelveticaNeueCyr-Bold.ttf) format("truetype"),
+    url(./helvetica/HelveticaNeueCyr-Bold.eot) format("opentype");
+  font-weight: bold;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: Helvetica;
-    src: local('Helvetica Neue Roman'),
-         local('HelveticaNeue-Roman'),
-         local('Helvetica Neue Regular'),
-         local('HelveticaNeue-Regular'),
-         url(./helvetica/HelveticaNeueCyr-Roman.woff2) format('woff2'),
-         url(./helvetica/HelveticaNeueCyr-Roman.woff) format('woff'),
-         url(./helvetica/HelveticaNeueCyr-Roman.ttf) format('truetype'),
-         url(./helvetica/HelveticaNeueCyr-Roman.eot) format('opentype');
-    font-weight: normal;
-    font-display: swap;
+  font-family: Helvetica;
+  src: local("Helvetica Neue Roman"), local("HelveticaNeue-Roman"),
+    local("Helvetica Neue Regular"), local("HelveticaNeue-Regular"),
+    url(./helvetica/HelveticaNeueCyr-Roman.woff2) format("woff2"),
+    url(./helvetica/HelveticaNeueCyr-Roman.woff) format("woff"),
+    url(./helvetica/HelveticaNeueCyr-Roman.ttf) format("truetype"),
+    url(./helvetica/HelveticaNeueCyr-Roman.eot) format("opentype");
+  font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: Helvetica;
-    src: local('Helvetica Neue Light'),
-         local('HelveticaNeue-Light'),
-         local('Helvetica Neue Light'),
-         local('HelveticaNeue-Light'),
-         url(./helvetica/HelveticaNeueCyr-Light.woff2) format('woff2'),
-         url(./helvetica/HelveticaNeueCyr-Light.woff) format('woff'),
-         url(./helvetica/HelveticaNeueCyr-Light.ttf) format('truetype'),
-         url(./helvetica/HelveticaNeueCyr-Light.eot) format('opentype');
-    font-weight: 300;
-    font-display: swap;
+  font-family: Helvetica;
+  src: local("Helvetica Neue Light"), local("HelveticaNeue-Light"),
+    local("Helvetica Neue Light"), local("HelveticaNeue-Light"),
+    url(./helvetica/HelveticaNeueCyr-Light.woff2) format("woff2"),
+    url(./helvetica/HelveticaNeueCyr-Light.woff) format("woff"),
+    url(./helvetica/HelveticaNeueCyr-Light.ttf) format("truetype"),
+    url(./helvetica/HelveticaNeueCyr-Light.eot) format("opentype");
+  font-weight: 300;
+  font-display: swap;
 }
 
 .app {
-	background-color: #fff;
-    font: normal 16px/1.5 Helvetica, sans-serif;
-    box-sizing: border-box;
+  background-color: #fff;
+  font: normal 16px/1.5 Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.active {
+  background-color: #5a3f98;
+}
+
+.inactive {
+  background-color: white;
+  border: 2px solid #9397cb;
 }
