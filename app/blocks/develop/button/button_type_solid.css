@@ -1,0 +1,15 @@
+.button_type_solid {
+    background-color: #FC691B;
+    color: #fff;
+}
+
+.button_type_solid:hover {
+    color: #FC691B;
+    border: .14em solid #FC691B;
+    background-color: transparent;
+}
+
+.button_type_solid:active {
+    background-color: #FC691B;
+    color: #000;
+}

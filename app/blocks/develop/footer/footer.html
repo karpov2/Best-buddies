@@ -1,0 +1,28 @@
+<footer class="footer">
+    <div class="app__layout footer__inner">
+        <div class="footer__column">
+            @@include('develop/logo/logo.html', {
+                "elem": "footer__logo"
+            })
+
+            <div class="footer__contact">
+                <p class="footer__address">115114, Москва, ул. Летниковская, дом 11/10, строение 5, подъезд №1 (в бизнес-центре «Capital House»)</p>
+                <a class="link footer__phone" href="tel:+74957253982">+7(495)725-39-82</a>
+                <a class="link footer__email" href="mailto:office@bestbuddies.ru">office@bestbuddies.ru</a>
+            </div>
+        </div>
+
+        <div class="footer__column">
+            <div class="footer__social">
+                @@include('develop/name-fond/name-fond.html', {
+                    "elem": "footer__name-fond-desc"
+                })
+                @@include('develop/smm/smm.html')
+            </div>
+            @@include('develop/button/button.html', {
+                "elem": "footer__button",
+                "mod": "button_type_solid"
+            })
+        </div>
+    </div>
+</footer>
