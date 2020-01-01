@@ -1,0 +1,9 @@
+.help__mailto {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.help__mailto:hover {
+  color: #fc691b;
+}

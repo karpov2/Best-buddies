@@ -1,0 +1,11 @@
+.help__image-link {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  fill: #5a3f98;
+  transition: all .3s ease-in-out;
+}
+
+.help__image-link:hover {
+  fill: #fc691b;
+}

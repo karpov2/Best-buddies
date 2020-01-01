@@ -16,9 +16,10 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .lead__button:hover {
   background: white;
-  color: #5A3F98;
+  color: #5a3f98;
 }

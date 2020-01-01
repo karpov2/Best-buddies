@@ -1,0 +1,9 @@
+.help__input {
+  position: absolute;
+  opacity: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  outline: none;
+  border-color: transparent;
+}
