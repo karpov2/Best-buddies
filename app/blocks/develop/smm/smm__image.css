@@ -1,0 +1,27 @@
+.smm__image {
+    display: block;
+    object-fit: contain;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    fill: #5a3f98;
+    transition: all 0.3s ease-in-out;
+}
+
+.smm__image:hover {
+    fill: #fc691b;
+}
+
+.smm__image:active {
+    transform: scale(0.8);
+}
+
+.smm__image_black {
+    width: 24px;
+    height: 24px;
+    fill: #333235;
+}
+
+.smm__image_black:hover {
+    fill: #5A3F98;
+}

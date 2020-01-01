@@ -10,6 +10,7 @@ function myFunction() {
 
   /* Copy the text inside the text field */
   document.execCommand("copy");
+  console.dir(window);
 
   /* Alert the copied text */
   // alert("Copied the text: " + copyText.value);
