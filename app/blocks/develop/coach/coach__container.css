@@ -1,0 +1,10 @@
+.coach__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.coach__container:nth-child(3) {
+  margin-bottom: 0;
+}

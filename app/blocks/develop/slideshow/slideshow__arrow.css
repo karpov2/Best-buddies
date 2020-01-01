@@ -6,6 +6,11 @@
 }
 
 .slideshow__arrow:hover {
+  transform: scale(1.2);
+}
+
+.slideshow__arrow:active {
+  transform: scale(1);
 }
 
 .slideshow__arrow:nth-of-type(1) {

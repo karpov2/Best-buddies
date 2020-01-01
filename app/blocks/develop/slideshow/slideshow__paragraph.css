@@ -1,1 +1,6 @@
-.slideshow__paragraph {}
+.slideshow__paragraph {
+}
+
+.slideshow__paragraph:nth-child(3) {
+  color: #fc691b;
+}
