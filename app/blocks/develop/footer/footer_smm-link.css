@@ -1,0 +1,7 @@
+.footer_smm-link {
+    margin-right: 24px;
+}
+
+.footer_smm-link:last-child {
+    margin-right: 0;
+}

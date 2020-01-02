@@ -1,5 +1,16 @@
 .footer__column {
     display: flex;
     align-items: flex-start;
+    /* flex: 1 1 0%; */
+}
+
+.footer__column_center {
     flex: 1 1 0%;
+    margin-left: 5.75em;
+    margin-right: 5.75em;
+}
+
+.footer__column_right {
+    flex-direction: column;
+    justify-content: space-between;
 }

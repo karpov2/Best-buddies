@@ -1,0 +1,10 @@
+.footer__arrow-up {
+    cursor: pointer;
+    margin-left: auto;
+    position: relative;
+    top: 32px;
+}
+
+.footer__arrow-up:hover .footer__arrow-up-image {
+    fill: #FC691B;
+}

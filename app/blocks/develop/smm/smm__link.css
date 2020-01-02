@@ -1,0 +1,7 @@
+.smm__link {
+    margin-right: 32px;
+}
+
+.smm__link:nth-child(4) {
+    margin-right: 0;
+}

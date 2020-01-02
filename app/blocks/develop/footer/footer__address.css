@@ -1,4 +1,5 @@
 .footer__address {
     margin-top: 0;
     margin-bottom: 1.4em;
+    max-width: 264px;
 }
