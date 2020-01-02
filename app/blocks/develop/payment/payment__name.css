@@ -1,0 +1,14 @@
+.payment__name {
+  height: 44px;
+  border: 2px solid #9397cb;
+  padding-left: 20px;
+}
+
+.payment__name::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #969696;
+}

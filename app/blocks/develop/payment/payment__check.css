@@ -1,0 +1,10 @@
+.payment__check {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+}
+
+.payment__check:checked + .payment__label {
+  background: #fc691b;
+  color: white;
+}

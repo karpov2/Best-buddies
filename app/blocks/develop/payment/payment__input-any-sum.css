@@ -1,0 +1,16 @@
+.payment__input-any-sum {
+  width: 152px;
+  height: 16px;
+  margin-right: 24px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #9397cb;
+  padding-bottom: 5px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+.payment__input-any-sum::placeholder {
+  color: #969696;
+}

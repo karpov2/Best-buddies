@@ -1,3 +1,5 @@
 .help__links {
   display: flex;
+  width: 226px;
+  justify-content: space-between;
 }

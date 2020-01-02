@@ -1,0 +1,98 @@
+<section class="payment">
+  <div class="app__layout payment__inner">
+    <div class="payment__types">
+      <div class="payment__container">
+        <p class="payment__type text-big theme-purple">Банковская карта</p>
+        <p class="payment__type text-big theme-purple">Яндекс.Деньги</p>
+      </div>
+    </div>
+
+    <div class="payment__sum">
+      <div class="payment__group">
+        <input
+          id="100"
+          type="radio"
+          value="100"
+          name="payment"
+          class="payment__check"
+        />
+        <label for="100" class="payment__label text-big">100 &#8381;</label>
+      </div>
+
+      <div class="payment__group">
+        <input
+          id="300"
+          type="radio"
+          value="300"
+          name="payment"
+          class="payment__check"
+        />
+        <label for="300" class="payment__label text-big">300 &#8381;</label>
+      </div>
+
+      <div class="payment__group">
+        <input
+          id="500"
+          type="radio"
+          value="500"
+          name="payment"
+          class="payment__check"
+        />
+        <label for="500" class="payment__label text-big">500 &#8381;</label>
+      </div>
+
+      <div class="payment__group">
+        <input
+          id="1000"
+          type="radio"
+          value="1000"
+          name="payment"
+          class="payment__check"
+        />
+        <label for="1000" class="payment__label еру text-big"
+          >1000 &#8381;</label
+        >
+      </div>
+
+      <div class="payment__any-sum">
+        <input
+          type="text"
+          id="any-sum"
+          class="payment__input-any-sum"
+          placeholder="Ваша сумма"
+        />
+        <label for="any-sum" class="payment__label-any-sum text-big"
+          >&#8381;</label
+        >
+      </div>
+    </div>
+
+    <div class="payment__who">
+      <div class="payment__group">
+        <label for="name" class="payment__who-label">Ваше имя*</label>
+        <input
+          class="payment__name"
+          type="text"
+          id="name"
+          placeholder="Иван Иванов"
+        />
+      </div>
+
+      <div class="payment__group">
+        <label for="email" class="payment__who-label">Ваш e-mail*</label>
+        <input
+          class="payment__email"
+          type="email"
+          id="email"
+          placeholder="ivanivanov@gmail.com"
+        />
+      </div>
+    </div>
+
+    <p class="payment__paragraph text-mini">
+      Оба поля обязательны для заполнения. Эти данные нам нужны только для того,
+      чтобы знать, кого благодарить и куда отправить уведомление о получении
+      пожертвования
+    </p>
+  </div>
+</section>
