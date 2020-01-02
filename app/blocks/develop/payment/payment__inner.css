@@ -1,0 +1,7 @@
+.payment__inner {
+    max-width: 704px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+}

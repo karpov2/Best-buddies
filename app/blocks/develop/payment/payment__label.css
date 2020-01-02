@@ -1,0 +1,12 @@
+.payment__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  width: 108px;
+  height: 44px;
+  color: #fc691b;
+  border: 2px solid #fc691b;
+  transition: all 0.3s ease-in-out;
+}

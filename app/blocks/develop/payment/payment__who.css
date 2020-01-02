@@ -1,0 +1,6 @@
+.payment__who {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}

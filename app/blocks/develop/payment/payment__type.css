@@ -1,0 +1,13 @@
+.payment__type {
+  margin: 0 40px 0 0;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.payment__type:nth-child(1) {
+  border-bottom: 8px solid #5a3f98;
+}
+
+.payment__type:nth-child(2) {
+  color: #9397cb;
+}

@@ -1,0 +1,9 @@
+.payment__who-label {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  color: #5a3f98;
+  margin-bottom: 5px;
+}
