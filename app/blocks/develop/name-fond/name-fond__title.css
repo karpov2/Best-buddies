@@ -1,9 +1,10 @@
 .name-fond__title {
     font-size: 1.125em;
+    line-height: 1.33;
     letter-spacing: .04em;
     font-weight: 300;
     text-transform: uppercase;
     color: #333235;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: .222em;
 }

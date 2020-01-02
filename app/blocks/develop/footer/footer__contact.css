@@ -1,4 +1,7 @@
 .footer__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     flex: 1 1 0%;
     font-size: .875em;
     letter-spacing: .03em;

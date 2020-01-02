@@ -1,0 +1,5 @@
+.estimate__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .75em;
+}
