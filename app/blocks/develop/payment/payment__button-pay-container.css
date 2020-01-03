@@ -1,0 +1,5 @@
+.payment__button-pay-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}

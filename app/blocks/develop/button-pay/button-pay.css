@@ -1,0 +1,13 @@
+.button-pay {
+  border: none;
+  width: 49%;
+  height: 44px;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
