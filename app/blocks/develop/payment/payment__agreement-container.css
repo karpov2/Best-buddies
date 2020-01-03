@@ -1,4 +1,5 @@
 .payment__agreement-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
 }
