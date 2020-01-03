@@ -1,0 +1,19 @@
+.payment__sum-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    flex: 1 1 0%;
+    height: 44px;
+    color: #fc691b;
+    border: 2px solid #fc691b;
+    transition: all 0.3s ease-in-out;
+    margin-right: 1em;
+}
+
+.payment__sum:checked + .payment__sum-label {
+    color: #fff;
+    background-color: #fc691b;
+}
+

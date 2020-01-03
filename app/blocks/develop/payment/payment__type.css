@@ -1,13 +1,21 @@
 .payment__type {
-  margin: 0 40px 0 0;
+  margin-right: 2.5em;
   cursor: pointer;
-  padding-bottom: 10px;
+  padding-bottom: .6em;
+  color: #9397CB;
 }
 
-.payment__type:nth-child(1) {
+.payment__type:last-child {
+  margin-right: 0;
+}
+
+/* Checked */
+.payment__method:checked + .payment__type {
+  color: #5A3F98;
   border-bottom: 8px solid #5a3f98;
 }
-
-.payment__type:nth-child(2) {
-  color: #9397cb;
+ 
+/* Hover */
+.payment__type:hover {
+	color: #FC691B;
 }

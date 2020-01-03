@@ -1,0 +1,5 @@
+.payment__image {
+    width: 100%;
+    max-width: 1240px;
+    object-fit: contain;
+}
