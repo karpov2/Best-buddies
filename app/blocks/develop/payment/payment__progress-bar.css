@@ -1,0 +1,5 @@
+.payment__progress-bar {
+  width: 100%;
+  border: 2px solid #fc691b;
+  border-radius: 6px;
+}

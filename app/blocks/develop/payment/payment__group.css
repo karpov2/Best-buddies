@@ -2,10 +2,10 @@
   margin-right: 16px;
   display: flex;
   flex-direction: column;
-  width: 51%;
+  width: 49%;
 }
 
 .payment__group:last-of-type {
   margin-right: 0;
-  width: 47%;
+  width: 49%;
 }
