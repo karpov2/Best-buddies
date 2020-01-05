@@ -3,3 +3,9 @@
     height: auto;
     object-fit: cover;
 }
+
+@media (max-width: 1239px) {
+    .slideshow__image {
+        max-width: 704px;
+    }
+}

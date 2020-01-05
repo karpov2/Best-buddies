@@ -1,9 +1,18 @@
 .goal__title {
-    text-transform: uppercase;
-    font-weight: normal;
-    font-size: 2em;
-    line-height: 2.5em;
-    letter-spacing: 0.5px;
-    color: #5A3F98;
-    margin: 0 0 35px 0;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2em;
+  line-height: 2.5em;
+  letter-spacing: 0.5px;
+  color: #5a3f98;
+  margin: 0 0 35px 0;
+}
+
+@media (max-width: 1239px) {
+  .goal__title {
+    line-height: 1.25;
+
+    order: 2;
+    margin-bottom: 40px;
+  }
 }

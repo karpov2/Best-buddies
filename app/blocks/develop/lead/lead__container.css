@@ -1,3 +1,13 @@
 .lead__container {
-    flex-basis: 272px;
+  flex-basis: 272px;
+}
+
+@media (max-width: 1239px) {
+  .lead__container {
+    order: 2;
+    max-width: 582px;
+    padding: 56px;
+    background-color: #b0eddb;
+    margin-top: 40px;
+  }
 }

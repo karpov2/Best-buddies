@@ -1,5 +1,6 @@
 .help__type {
-    display: flex;
-    align-items: center;
-    flex-basis: 276px;
+  display: flex;
+  align-items: center;
+  width: 276px;
+  margin-bottom: 30px;
 }

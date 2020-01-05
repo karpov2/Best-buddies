@@ -1,5 +1,12 @@
 .goal__image {
-    flex-basis: 514px;
+    max-width: 514px;
     height: auto;
     object-fit: cover;
+}
+
+@media (max-width: 1239px) {
+    .goal__image {
+        margin-bottom: 40px;
+        order: 1;
+    }
 }

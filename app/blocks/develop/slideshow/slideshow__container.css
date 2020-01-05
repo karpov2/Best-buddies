@@ -1,3 +1,9 @@
 .slideshow__container {
-  flex-basis: 399px;
+  max-width: 399px;
+}
+
+@media (max-width: 1239px) {
+  .slideshow__container {
+    max-width: 500px;
+  }
 }
