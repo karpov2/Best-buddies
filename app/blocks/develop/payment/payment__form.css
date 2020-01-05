@@ -1,4 +1,10 @@
 .payment__form {
-    max-width: 704px;
-    margin-bottom: 60px;
+  max-width: 704px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1239px) {
+  .payment__form {
+    padding: 0 20px;
+  }
 }

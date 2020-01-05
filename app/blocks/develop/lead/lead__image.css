@@ -1,4 +1,10 @@
 .lead__image {
-    flex-basis: 860px;
-    height: auto;
+  flex-basis: 860px;
+  height: auto;
+}
+
+@media (max-width: 1239px) {
+  .lead__image {
+    order: 1;
+  }
 }

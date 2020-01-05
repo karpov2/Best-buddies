@@ -1,5 +1,6 @@
 .payment__types {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 2.5em;
   padding-bottom: .625em;
   border-bottom: .25em solid #BEC5C9;

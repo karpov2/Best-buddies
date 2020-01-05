@@ -1,3 +1,9 @@
 .coach__about {
-  flex-basis: 604px;
+  max-width: 604px;
+}
+
+@media (max-width: 1239px) {
+  .coach__about {
+   max-width: 500px;
+  }
 }

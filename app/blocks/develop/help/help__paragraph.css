@@ -6,3 +6,9 @@
 .help__paragraph:nth-child(2) {
   margin-bottom: 0;
 }
+
+@media (max-width: 1239px) {
+  .help__paragraph {
+    max-width: 608px;
+  }
+}

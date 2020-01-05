@@ -2,3 +2,9 @@
   max-width: 712px;
   position: relative;
 }
+
+@media (max-width: 1239px) {
+  .slideshow__slider {
+    margin-bottom: 60px;
+  }
+}
