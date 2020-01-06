@@ -3,3 +3,17 @@
     height: 5em;
     display: block;
 }
+
+@media screen and (max-width: 768px) and (min-width: 360px) {
+    .logo {
+        width: calc((100vw - 22.5em)/(48 - 22.5) * (5 - 4) + 4em);
+        height: calc((100vw - 22.5em)/(48 - 22.5) * (5 - 4) + 4em);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .logo {
+        width: 4em;
+        height: 4em;
+    }
+}
