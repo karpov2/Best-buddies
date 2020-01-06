@@ -22,3 +22,17 @@
     background-color: #FC691B;
     color: #000;
 }
+
+@media screen and (max-width: 1240px) and (min-width: 768px) {
+    .button {
+        padding: 
+        1em
+        calc((100vw - 48em)/(77.5 - 48) * (3.2 - 2.5) + 2.5em);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .button {
+        padding: 1em 2.5em;
+    }
+}

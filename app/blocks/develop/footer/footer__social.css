@@ -1,3 +1,4 @@
 .footer__social {
-    flex: 1 1 0%;
+    /* flex: 1 1 0%; */
+    grid-area: logo;
 }

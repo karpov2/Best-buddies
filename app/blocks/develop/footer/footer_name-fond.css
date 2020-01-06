@@ -1,4 +1,9 @@
 .footer_name-fond {
-    margin-bottom: 24px;
     max-width: 264px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer_name-fond {
+        margin-bottom: 1.5em;
+    }
 }

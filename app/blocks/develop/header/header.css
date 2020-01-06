@@ -1,3 +1,23 @@
 .header {
 	padding: 1em 0;
 }
+
+@media screen and (max-width: 768px) {
+	.header_name-fond-desc {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .header {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}

@@ -2,9 +2,15 @@
     cursor: pointer;
     margin-left: auto;
     position: relative;
-    top: 32px;
+    /* top: 32px; */
 }
 
 .footer__arrow-up:hover .footer__arrow-up-image {
     fill: #FC691B;
+}
+
+@media screen and (max-width: 650px) {
+    .footer__arrow-up {
+        margin-left: 0;
+    }
 }

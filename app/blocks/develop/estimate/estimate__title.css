@@ -3,3 +3,15 @@
     letter-spacing: .0238em;
     margin: 0 0 1.33em;
 }
+
+@media screen and (max-width: 768px) and (min-width: 360px) {
+    .estimate__title {
+        font-size: calc((100vw - 22.5em)/(48 - 22.5) * (1.3 - 1.125) + 1.125em);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .estimate__title {
+        font-size: 1.125em;
+    }
+}

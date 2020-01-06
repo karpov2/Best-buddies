@@ -1,9 +1,16 @@
 .footer__contact {
+    grid-area: contact;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex: 1 1 0%;
+    /* flex: 1 1 0%; */
     font-size: .875em;
     letter-spacing: .03em;
     color: #333235;
+}
+
+@media screen and (max-width: 530px) {
+    .footer__contact {
+        align-items: center;
+    }
 }

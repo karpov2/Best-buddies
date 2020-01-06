@@ -2,4 +2,24 @@
     background-color: #B0EDDB;
     padding-top: 3.75em;
     padding-bottom: 7.25em;
+    padding-left: 6.25em;
+    padding-right: 6.25em;
+}
+
+@media screen and (max-width: 1240px) and (min-width: 360px) {
+    .estimate {
+        padding-left: calc((100vw - 22.5em)/(77.5 - 22.5) * (6.25 - 1) + 1em);
+        padding-right: calc((100vw - 22.5em)/(77.5 - 22.5) * (6.25 - 1) + 1em);
+        padding-bottom: calc((100vw - 22.5em)/(77.5 - 22.5) * (7.25 - 3.75) + 3.75em);
+        padding-top: calc((100vw - 22.5em)/(77.5 - 22.5) * (3.75 - 2.5) + 2.5em);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .estimate {
+        padding-top: 2.5em;
+        padding-bottom: 3.75em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
 }

@@ -4,3 +4,17 @@
     color: #333235;
     letter-spacing: .0138em;
 }
+
+@media screen and (max-width: 768px) and (min-width: 360px) {
+    .estimate__lesson {
+        font-size: calc((100vw - 22.5em)/(48 - 22.5) * (1.125 - .875) + .875em);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .estimate__lesson {
+        font-weight: bold;
+        line-height: 1.1;
+        font-size: .875em;
+    }
+}
