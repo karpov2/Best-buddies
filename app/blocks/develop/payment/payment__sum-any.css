@@ -12,3 +12,23 @@
 .payment__sum-any .payment__sum-any_activ {
   border: 2px solid #fc691b;
 }
+
+@media (max-width: 767px) {
+  .payment__sum-any {
+    max-width: 100%;
+    margin-top: 14px;
+  }
+}
+
+@media (max-width: 470px) {
+  .payment__sum-any {
+    max-width: 220px;
+    margin-top: 14px;
+  }
+}
+
+@media (max-width: 367px) {
+  .payment__sum-any {
+    max-width: 100%;
+  }
+}

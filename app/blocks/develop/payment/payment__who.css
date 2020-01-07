@@ -4,3 +4,9 @@
   justify-content: space-between;
   margin-bottom: 28px;
 }
+
+@media (max-width: 470px) {
+  .payment__who {
+    flex-direction: column;
+  }
+}

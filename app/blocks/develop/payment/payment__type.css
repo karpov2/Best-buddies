@@ -19,3 +19,9 @@
 .payment__type:hover {
 	color: #FC691B;
 }
+
+@media (max-width: 767px) {
+  .payment__type {
+    margin-right: 33px;
+  }
+}

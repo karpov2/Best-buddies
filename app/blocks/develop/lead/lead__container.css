@@ -1,5 +1,5 @@
 .lead__container {
-  flex-basis: 272px;
+  max-width: 272px;
 }
 
 @media (max-width: 1239px) {
@@ -9,5 +9,13 @@
     padding: 56px;
     background-color: #b0eddb;
     margin-top: 40px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .lead__container {
+    padding: 32px 25px;
+    margin-top: 0;
   }
 }

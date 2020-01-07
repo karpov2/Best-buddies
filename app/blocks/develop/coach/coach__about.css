@@ -7,3 +7,9 @@
    max-width: 500px;
   }
 }
+
+@media (max-width: 767px) {
+    .coach__about {
+        padding: 0 20px;
+    }
+}

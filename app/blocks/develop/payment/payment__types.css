@@ -5,3 +5,10 @@
   padding-bottom: .625em;
   border-bottom: .25em solid #BEC5C9;
 }
+
+
+@media (max-width: 767px) {
+  .payment__types {
+    margin-bottom: 35px;
+  }
+}

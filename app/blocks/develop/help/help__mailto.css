@@ -7,3 +7,11 @@
 .help__mailto:hover {
   color: #fc691b;
 }
+
+@media (max-width: 767px) {
+  .help__mailto {
+    display: block;
+    width: fit-content;
+    margin-top: 27px;
+  }
+}

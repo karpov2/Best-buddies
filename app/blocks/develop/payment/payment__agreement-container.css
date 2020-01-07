@@ -3,3 +3,9 @@
   align-items: center;
   margin-bottom: 80px;
 }
+
+@media (max-width: 470px) {
+  .payment__agreement-container {
+    margin-bottom: 60px;
+  }
+}

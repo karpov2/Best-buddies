@@ -8,6 +8,14 @@
 
 @media (max-width: 1239px) {
   .help__container {
-    max-width: 640px;
+    max-width: 608px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .help__container {
+    align-items: center;
+    margin: 19px 0;
   }
 }

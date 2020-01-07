@@ -12,3 +12,15 @@
     max-width: 608px;
   }
 }
+
+@media (max-width: 767px) {
+  .help__paragraph {
+    padding: 0 20px;
+  }
+  .help__paragraph:nth-child(1) {
+    text-align: left;
+  }
+  .help__paragraph:nth-child(2) {
+    text-align: center;
+  }
+}

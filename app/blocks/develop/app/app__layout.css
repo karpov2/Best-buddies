@@ -1,4 +1,17 @@
 .app__layout {
 	max-width: 1240px;
+
 	margin: 0 auto;
+}
+
+@media (max-width: 1239px) {
+	.app__layout {
+		max-width: 704px;
+	}
+}
+
+@media (max-width: 767px) {
+	.app__layout {
+
+	}
 }
