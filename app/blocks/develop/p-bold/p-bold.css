@@ -3,3 +3,9 @@
     font-size: 1.125em;
     line-height: 1.33;
 }
+
+@media (max-width: 367px) {
+    .p-bold {
+        font-size: 0.9375em;
+    }
+}

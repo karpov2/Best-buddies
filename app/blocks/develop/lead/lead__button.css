@@ -23,3 +23,16 @@
   background: white;
   color: #5a3f98;
 }
+
+@media (max-width: 767px) {
+  .lead__button {
+   left: 30px;
+  }
+}
+
+@media (max-width: 470px) {
+  .lead__button {
+    left: 25px;
+    bottom: 32px;
+  }
+}

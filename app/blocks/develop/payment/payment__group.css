@@ -9,3 +9,15 @@
   margin-right: 0;
   width: 49%;
 }
+
+@media (max-width: 470px) {
+  .payment__group {
+    width: 100%;
+  }
+
+  .payment__group:last-of-type {
+    margin-top: 28px;
+    margin-right: 0;
+    width: 100%;
+  }
+}

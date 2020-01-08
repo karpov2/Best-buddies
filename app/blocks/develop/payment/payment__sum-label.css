@@ -4,16 +4,63 @@
     justify-content: center;
     cursor: pointer;
     padding: 0;
-    flex: 1 1 0%;
+    flex: 1 1 98px;
     height: 44px;
     color: #fc691b;
     border: 2px solid #fc691b;
     transition: all 0.3s ease-in-out;
-    margin-right: 1em;
+    margin-right: 16px;
 }
 
 .payment__sum:checked + .payment__sum-label {
     color: #fff;
     background-color: #fc691b;
 }
+
+@media (max-width: 767px) {
+    .payment__sum-label:nth-of-type(4) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 470px) {
+    .payment__sum-label:nth-of-type(3) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 470px) {
+    .payment__sum-label:nth-of-type(4) {
+        margin-right: 16px;
+        margin-top: 14px;
+    }
+}
+
+
+@media (max-width: 367px) {
+    .payment__sum-label {
+        flex-basis: calc(100% / 2 - 16px);
+    }
+}
+
+@media (max-width: 367px) {
+    .payment__sum-label:nth-of-type(2) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 367px) {
+    .payment__sum-label:nth-of-type(3) {
+        margin-right: 16px;
+        margin-top: 14px;
+    }
+}
+
+@media (max-width: 367px) {
+    .payment__sum-label:nth-of-type(4) {
+        margin-right: 0;
+    }
+}
+
+
 

@@ -8,3 +8,9 @@
     order: 3;
   }
 }
+
+@media (max-width: 1239px) {
+  .goal__container {
+    padding: 0 20px;
+  }
+}

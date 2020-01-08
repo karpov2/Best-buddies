@@ -6,7 +6,14 @@
 
 @media (max-width: 1239px) {
     .goal__image {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         order: 1;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .goal__image {
+        max-width: 100%;
     }
 }

@@ -3,3 +3,9 @@
     justify-content: space-between;
     margin-bottom: 40px;
 }
+
+@media (max-width: 470px) {
+    .payment__button-pay-container {
+        flex-direction: column;
+    }
+}

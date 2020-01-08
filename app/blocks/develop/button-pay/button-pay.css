@@ -11,3 +11,13 @@
   letter-spacing: 0.5px;
   cursor: pointer;
 }
+
+@media (max-width: 470px) {
+  .button-pay {
+    width: 100%;
+  }
+
+  .button-pay:nth-of-type(1) {
+    margin-bottom: 22px;
+  }
+}

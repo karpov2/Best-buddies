@@ -1,6 +1,12 @@
 .payment__amount {
     display: flex;
     justify-content: space-between;
-
     margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+    .payment__amount {
+        margin-bottom: 30px;
+    }
 }

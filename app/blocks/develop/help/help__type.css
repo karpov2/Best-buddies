@@ -1,6 +1,14 @@
 .help__type {
   display: flex;
   align-items: center;
-  width: 276px;
+  width: 246px;
   margin-bottom: 30px;
+}
+
+
+@media (max-width: 767px) {
+  .help__type {
+    width: 100%;
+    justify-content: center;
+  }
 }
