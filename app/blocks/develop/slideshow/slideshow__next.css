@@ -1,1 +1,7 @@
 .slideshow__next {}
+
+@media (max-width: 1239px) {
+    .slideshow__next {
+        display: none;
+    }
+}

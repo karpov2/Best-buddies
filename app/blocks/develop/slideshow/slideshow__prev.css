@@ -1,3 +1,10 @@
 .slideshow__prev {
 
 }
+
+
+@media (max-width: 1239px) {
+    .slideshow__prev {
+        display: none;
+    }
+}

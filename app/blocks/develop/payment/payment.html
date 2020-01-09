@@ -1,5 +1,5 @@
 <section class="payment">
-  <div class="app__layout payment__inner">
+  <div class="payment__inner">
     <form class="payment__form">
       <div class="payment__types">
         <input
@@ -89,6 +89,8 @@
             class="payment__name"
             type="text"
             id="name"
+            minlength="2"
+            maxlength="30"
             placeholder="Иван Иванов"
           />
         </div>
@@ -118,11 +120,10 @@
       </div>
 
       <div class="payment__agreement-container">
-        <input id="agree" type="checkbox" class="payment__agree" /><label
-          class="payment__agreement-text text-mini"
-          for="agree"
+        <input id="agree" type="checkbox" class="payment__agree" />
+        <label class="payment__agreement-text text-mini" for="agree"
           >Я принимаю правила, изложенные в
-          <a class="payment__agreement-link theme-purple" href=""
+          <a class="payment__agreement-link theme-purple" href="" target="_blank"
             >Соглашении об использовании персональных данных</a
           ></label
         >
