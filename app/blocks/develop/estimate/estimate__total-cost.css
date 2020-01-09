@@ -1,6 +1,7 @@
 .estimate__total-cost {
     font-size: 1.3em;
     letter-spacing: .0238em;
+    display: block;
 }
 
 @media screen and (max-width: 768px) and (min-width: 360px) {

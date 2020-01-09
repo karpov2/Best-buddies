@@ -1,5 +1,6 @@
 .estimate__table {
     display: flex;
+    width: 100%;
     flex-direction: column;
     background-color: #fff;
     padding: 2.25em 3em 2em;

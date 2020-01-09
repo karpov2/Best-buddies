@@ -1,1 +1,3 @@
-.estimate__table-row {}
+.estimate__table-row {
+    display: block;
+}
