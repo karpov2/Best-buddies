@@ -1,10 +1,10 @@
 .payment {
-    padding-top: 8.75em;
-    padding-bottom: 2.5em;
+    /*padding-top: 8.75em;*/
+    /*padding-bottom: 2.5em;*/
 }
 
-@media (max-width: 470px) {
-    .payment {
-        padding-bottom: 100px;
-    }
-}
+/*@media (max-width: 470px) {*/
+/*    .payment {*/
+/*        padding-bottom: 100px;*/
+/*    }*/
+/*}*/

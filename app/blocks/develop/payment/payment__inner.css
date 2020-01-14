@@ -1,9 +1,16 @@
 .payment__inner {
-    /* max-width: 704px; */
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    box-sizing: border-box;
-    align-items: center;
+  /* max-width: 704px; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  margin-top: 140px;
+  /*margin-bottom: 40px;*/
 }
 
+@media (max-width: 470px) {
+  .payment__inner {
+    margin-bottom: 100px;
+  }
+}

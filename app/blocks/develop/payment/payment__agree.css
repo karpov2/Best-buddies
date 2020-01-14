@@ -4,15 +4,15 @@
 }
 
 .payment__agree + .payment__agreement-text:before {
-  border: 1px solid black;
+  border: 2px solid black;
   content: "\00a0";
   display: inline-block;
   font: 16px/1em sans-serif;
-  height: 14px;
+  height: 16px;
   margin: 0 8px 0 0;
   padding: 0;
   vertical-align: top;
-  width: 14px;
+  width: 16px;
   border-radius: 3px;
 }
 .payment__agree:checked + .payment__agreement-text:before {
