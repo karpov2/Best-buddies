@@ -1,5 +1,6 @@
 .header__share {
     margin-right: 3.25em;
+    position: relative;
 }
 
 @media screen and (max-width: 1240px) and (min-width: 768px) {

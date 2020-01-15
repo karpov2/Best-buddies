@@ -15,7 +15,7 @@
 
 @media (max-width: 767px) {
   .help__paragraph {
-    padding: 0 20px;
+    /* padding: 0 20px; */
   }
   .help__paragraph:nth-child(1) {
     text-align: left;

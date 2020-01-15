@@ -1,0 +1,11 @@
+.app__wrapper {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+@media screen and (max-width: 660px) {
+    .app__wrapper {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
