@@ -1,30 +1,17 @@
 .payment__agree {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
 
-.payment__agree + .payment__agreement-text:before {
-  border: 2px solid black;
-  content: "\00a0";
-  display: inline-block;
-  font: 16px/1em sans-serif;
-  height: 16px;
-  margin: 0 8px 0 0;
-  padding: 0;
-  vertical-align: top;
-  width: 16px;
-  border-radius: 3px;
+  /* On mouse-over, add a grey background color */
+.payment__agree:hover ~ .payment__checkmark {
+  /* border-color: rgba(50, 49, 53, 1); */
 }
-.payment__agree:checked + .payment__agreement-text:before {
-  background: #fff;
-  color: #333;
-  content: "\2713";
-  text-align: center;
-}
-.payment__agree:checked + .payment__agreement-text:after {
-  font-weight: bold;
-}
-
-.payment__agree:focus + .payment__agreement-text::before {
-  outline: rgb(59, 153, 252) auto 5px;
+  
+  /* When the checkbox is checked, add a blue background */
+.payment__agree:checked ~ .payment__checkmark {
+  /* border-color: rgba(50, 49, 53, 1); */
 }

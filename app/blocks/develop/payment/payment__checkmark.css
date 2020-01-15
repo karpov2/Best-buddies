@@ -1,0 +1,35 @@
+/* Create a custom checkbox */
+.payment__checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 14px;
+	width: 14px;
+    background-color: transparent;
+    border: 2px solid #333235;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+/* Create the payment__checkmark/indicator (hidden when not checked) */
+.payment__checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the payment__checkmark when checked */
+.payment__agree:checked ~ .payment__checkmark:after {
+	display: block;
+}
+
+/* Style the payment__checkmark/indicator */
+.payment__checkmark:after {
+	left: 6px;
+	top: -5px;
+	width: 5px;
+	height: 14px;
+	border: solid #333235;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}

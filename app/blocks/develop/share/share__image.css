@@ -1,0 +1,21 @@
+.share__image {
+    width: 2em;
+    height: 2em;
+    padding: .25em;
+    object-fit: contain;
+    fill: #5A3F98;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.share__image:hover {
+    fill: #FC691B;
+}
+
+.share__image:active {
+    fill: #FC691B;
+}
+
+.share__image_disabled {
+    display: none;
+}

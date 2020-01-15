@@ -21,7 +21,6 @@ img {
 }
 
 .app {
-  scroll-behavior: smooth;
   background-color: #fff;
   font: normal 16px/1.5 Helvetica, sans-serif;
   box-sizing: border-box;

@@ -1,0 +1,7 @@
+.payment__agree-label {
+    display: block;
+    position: relative;
+    padding-left: 21px;
+    cursor: pointer;
+    user-select: none;
+}

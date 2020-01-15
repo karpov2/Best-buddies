@@ -1,3 +1,7 @@
 .smm {
     display: flex;
 }
+
+.smm_disabled {
+    display: none;
+}

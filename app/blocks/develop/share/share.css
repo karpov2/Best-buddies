@@ -1,17 +1,4 @@
 .share {
-    width: 2em;
-    height: 2em;
-    padding: .25em;
-    object-fit: contain;
-    fill: #5A3F98;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-}
-
-.share:hover {
-    fill: #FC691B;
-}
-
-.share:active {
-    fill: #FC691B;
+    display: flex;
+    align-items: center;
 }

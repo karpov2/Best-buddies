@@ -10,9 +10,40 @@
 		</div>
 
 		<div class="header__column">
-			<svg class="share header__share">
-				<use xlink:href="@symbol#share__share"></use>
-			</svg>
+			
+			<div class="share header__share">
+				<div class="smm smm_disabled">
+					<a href="" class="smm__link" target="_blank">
+						<svg class="smm__image">
+							<use xlink:href="@symbol#smm__twitter"></use>
+						</svg>
+					</a>
+		
+					<a href="" class="smm__link" target="_blank">
+						<svg class="smm__image">
+							<use xlink:href="@symbol#smm__vk"></use>
+						</svg>
+					</a>
+		
+					<a href="" class="smm__link" target="_blank">
+						<svg class="smm__image">
+							<use xlink:href="@symbol#smm__fb"></use>
+						</svg>
+					</a>
+		
+					<a class="smm__link">
+						<svg class="smm__image" onclick="myFunction()">
+							<use xlink:href="@symbol#smm__copy-link"></use>
+						</svg>
+					</a>
+		
+					<input type="text" value="https://ru.bem.info/" class="help__input" />
+				</div>
+
+				<svg class="share__image">
+					<use xlink:href="@symbol#share__share"></use>
+				</svg>
+			</div>
 
 			@@include('develop/button/button.html', {
                 "elem": "",
