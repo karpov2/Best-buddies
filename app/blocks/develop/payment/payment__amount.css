@@ -1,4 +1,6 @@
 .payment__amount {
+    padding: 0;
+    border: none;
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;

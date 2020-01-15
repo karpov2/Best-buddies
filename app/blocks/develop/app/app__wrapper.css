@@ -5,7 +5,8 @@
 
 @media screen and (max-width: 660px) {
     .app__wrapper {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
+

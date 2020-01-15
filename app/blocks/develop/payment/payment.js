@@ -10,14 +10,15 @@ const errors = {
 
 //форма оплаты
 class PaymentForm {
-  constructor(form, validation) {
-    this.validation = validation;
+  constructor(form) {
     this.form = form;
     this.paymentSum = this.form.querySelectorAll(".payment__sum");
     this.paymentInput = this.form.querySelector(".payment__input-any-sum");
     this.rubleSign = this.form.querySelector(".payment__label-any-sum");
     this.name = this.form.querySelector(".payment__name");
     this.email = this.form.querySelector(".payment__email");
+    this.buttonMonthly = this.form.querySelector(".payment__monthly");
+    this.buttonOnes = this.form.querySelector(".payment__ones");
   }
 
   clearDefaultSum(event) {
@@ -75,145 +76,64 @@ class PaymentForm {
       event.target.style.border = "2px solid #9397CB";
     }
   }
-}
 
-//валидация
-//Класс для валидации
-class Validation {
-  constructor(errors) {
-    this.errors = errors;
-  }
+  checkInputs(event) {
+    const checkboxSum = event.currentTarget.elements.payment__sum,
+      inputSum = event.currentTarget.elements.payment__suminput,
+      name = event.currentTarget.elements.name,
+      email = event.currentTarget.elements.email,
+      agree = event.currentTarget.elements.payment__agree;
 
-  validate(event) {
-    const [
-      input0,
-      input1,
-      input2,
-      input3,
-      input4,
-      input5,
-      input6,
-      input7,
-      input8
-    ] = event.currentTarget.elements;
-    console.log(event.currentTarget.elements);
-
-    if (!input7.validity.valid || !input8.validity.valid) {
-      this.checkEmptyInput(event, input7, input8);
-      this.checkRange(event, input7, input8);
-      this.checkCorrectInput(event, input7, input8);
-      this.checkLink(event, input7, input8);
-      this.disableButton(event);
-    } else {
-      this.removeErrors(event);
-      this.activateButton(event);
+    function checkCheckboxSum() {
+      const result = Array.from(checkboxSum).find(sum => sum.checked === true);
+      return result ? result.value : false;
     }
-  }
 
-  //Проверка на пустое поле ввода
-  checkEmptyInput(event, ...inputs) {
-    if (event.target.value.length === 0) {
-      inputs.forEach(input => {
-        if (event.target.name === input.name) {
-          document.querySelector(
-            `#${input.name}`
-          ).textContent = this.errors.emptyInput;
-        }
-      });
+    function checkInputSum() {
+      return inputSum.value > 0 ? inputSum.value : false;
     }
-  }
 
-  //Проверка диапазона поля ввода
-  checkRange(event, ...inputs) {
-    if (event.target.value.length === 1 || event.target.value.length > 30) {
-      inputs.forEach(input => {
-        if (event.target.name === input.name) {
-          document.querySelector(
-            `#${input.name}`
-          ).textContent = this.errors.outOfRange;
-        }
-      });
+    function checkName() {
+      return name.validity.valid ? name.value : false;
     }
-  }
 
-  //Проверка корректного значения в поле ввода
-  checkCorrectInput(event, ...inputs) {
-    if (event.target.validity.valid) {
-      inputs.forEach(input => {
-        if (event.target.name === input.name) {
-          document.querySelector(
-            `#${input.name}`
-          ).textContent = this.errors.correctInput;
-        }
-      });
+    function checkEmail() {
+      return email.validity.valid ? email.value : false;
     }
-  }
 
-  //Проверка ссылки
-  checkLink(event, ...inputs) {
-    if (!event.target.validity.valid && event.target.value.length === 0) {
-      inputs.forEach(input => {
-        if (event.target.name === input.name) {
-          document.querySelector(
-            `#${input.name}`
-          ).textContent = this.errors.emptyInput;
-        }
-      });
-    } else if (
-      !event.target.validity.valid &&
-      (event.target.name === "email" || event.target.name === "avatar")
+    function checkAgree() {
+      return agree.checked;
+    }
+
+    if (
+      (checkCheckboxSum() || checkInputSum()) &&
+      checkName() &&
+      checkEmail() &&
+      checkAgree()
     ) {
-      inputs.forEach(input => {
-        if (event.target.name === input.name) {
-          document.querySelector(
-            `#${input.name}`
-          ).textContent = this.errors.invalidLink;
-        }
-      });
+      this.buttonMonthly.removeAttribute("disabled");
+      this.buttonMonthly.classList.add("payment__monthly_active");
+
+      this.buttonOnes.removeAttribute("disabled");
+      this.buttonOnes.classList.add("payment__ones_active");
+    } else {
+      this.buttonMonthly.setAttribute("disabled", true);
+      this.buttonMonthly.classList.remove("payment__monthly_active");
+
+      this.buttonOnes.removeAttribute("disabled");
+      this.buttonOnes.classList.remove("payment__ones_active");
     }
-  }
-
-  //Удаление ошибок
-  removeErrors(event) {
-    event.currentTarget.querySelectorAll(".error").forEach(error => {
-      error.textContent = "";
-    });
-  }
-
-  //Отключение кнопки формы
-  disableButton() {
-    const buttons = document.querySelectorAll(".button-pay");
-    console.log(buttons);
-    buttons.forEach(button => {
-      button.setAttribute("disabled", true);
-      button.classList.add("button-pay_disabled");
-      button.classList.remove("button-pay_active");
-    });
-  }
-
-  //Включение кнопки формы
-  activateButton() {
-    const buttons = document.querySelectorAll(".button-pay");
-    buttons.forEach(button => {
-      button.removeAttribute("disabled");
-      button.classList.remove("button-pay_disabled");
-      button.classList.add("button-pay_active");
-    });
   }
 }
 
-const validation = new Validation(errors.ru);
-
-const payForm = new PaymentForm(
-  document.querySelector(".payment__form"),
-  validation
-);
+const payForm = new PaymentForm(document.querySelector(".payment__form"));
 
 payForm.form.addEventListener("input", event => {
-  payForm.validation.validate(event);
   payForm.clearDefaultSum(event);
   payForm.clearInputSum(event);
   payForm.activateNameOrEmailInput(event);
+
+  payForm.checkInputs(event);
 });
 
 payForm.form.addEventListener("focusout", event => {

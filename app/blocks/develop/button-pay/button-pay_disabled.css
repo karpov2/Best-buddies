@@ -1,1 +1,4 @@
-.button-pay_disabled {}
+.button-pay_disabled {
+  background-color: #9397cb;
+  color: white;
+}
