@@ -10,7 +10,8 @@ const errors = {
 
 //форма оплаты
 class PaymentForm {
-  constructor(form) {
+  constructor(form, widget) {
+    this.widget = widget;
     this.form = form;
     this.paymentSum = this.form.querySelectorAll(".payment__sum");
     this.paymentInput = this.form.querySelector(".payment__input-any-sum");
@@ -124,19 +125,62 @@ class PaymentForm {
       this.buttonOnes.classList.remove("payment__ones_active");
     }
   }
+
+  openPaymentForm(event) {
+    event.preventDefault();
+
+    if (event.target.classList.contains("button-pay")) {
+      console.log("Hello");
+    }
+
+    console.log(event.);
+    this.widget.charge(
+      {
+        // options
+        publicId: "test_api_00000000000000000000001", //id из личного кабинета
+        description: "Пример оплаты (деньги сниматься не будут)", //назначение
+        amount: 10, //сумма
+        currency: "RUB", //валюта
+        invoiceId: "1234567", //номер заказа  (необязательно)
+        accountId: "user@example.com", //идентификатор плательщика (необязательно)
+        skin: "mini", //дизайн виджета
+        data: {
+          myProp: "myProp value" //произвольный набор параметров
+        }
+      },
+      function(options) {
+        // success
+        //действие при успешной оплате
+      },
+      function(reason, options) {
+        // fail
+        //действие при неуспешной оплате
+      }
+    );
+  }
 }
 
-const payForm = new PaymentForm(document.querySelector(".payment__form"));
+const payForm = new PaymentForm(
+  document.querySelector(".payment__form"),
+  new cp.CloudPayments()
+);
 
 payForm.form.addEventListener("input", event => {
   payForm.clearDefaultSum(event);
   payForm.clearInputSum(event);
   payForm.activateNameOrEmailInput(event);
-
   payForm.checkInputs(event);
 });
 
 payForm.form.addEventListener("focusout", event => {
   payForm.setDefaultInput(event);
   payForm.setDefaultNameOrEmailInput(event);
+});
+
+payForm.form.addEventListener("submit", event => {
+  payForm.openPaymentForm(event);
+});
+
+document.querySelector(".button-pay").addEventListener("submit", event => {
+  payForm.openPaymentForm(event);
 });
