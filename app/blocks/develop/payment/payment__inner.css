@@ -9,6 +9,13 @@
   /*margin-bottom: 40px;*/
 }
 
+@media (max-width: 660px) {
+  .payment__inner {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
 @media (max-width: 470px) {
   .payment__inner {
     margin-bottom: 100px;

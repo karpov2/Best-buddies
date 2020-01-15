@@ -3,3 +3,10 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width: 660px) {
+    .footer__inner {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}

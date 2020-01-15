@@ -133,7 +133,12 @@ class PaymentForm {
       console.log("Hello");
     }
 
-    console.log(event.);
+    console.log(this);
+    console.dir(event.target);
+    const {buttonMonthly, buttonOnes} = event.target.elements;
+    console.log(buttonMonthly);
+    console.log(buttonOnes);
+
     this.widget.charge(
       {
         // options

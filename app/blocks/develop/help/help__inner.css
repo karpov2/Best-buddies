@@ -12,13 +12,14 @@
 @media (max-width: 1239px) {
   .help__inner {
     align-items: center;
+    margin-top: 106px;
+    margin-bottom: 100px;
   }
 }
 
-@media (max-width: 1239px) {
+@media (max-width: 660px) {
   .help__inner {
-    /*padding: 106px 0 100px 0;*/
-    margin-top: 106px;
-    margin-bottom: 100px;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
