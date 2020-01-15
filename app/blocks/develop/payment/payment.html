@@ -88,21 +88,25 @@
           <input
             class="payment__name"
             type="text"
-            id="name"
+            name="name"
             minlength="2"
             maxlength="30"
+            required
             placeholder="Иван Иванов"
           />
+          <p class="error" id="name"></p>
         </div>
 
         <div class="payment__group">
           <label for="email" class="payment__who-label">Ваш e-mail*</label>
           <input
             class="payment__email"
+            name="email"
             type="email"
-            id="email"
+            required
             placeholder="ivanivanov@gmail.com"
           />
+          <p class="error" id="email"></p>
         </div>
       </div>
 
@@ -113,17 +117,22 @@
       </p>
 
       <div class="payment__button-pay-container">
-        <button class="button-pay payment__monthly">
+        <button class="button-pay  payment__monthly">
           Хочу помогать ежемесячно
         </button>
-        <button class="button-pay payment__ones">Помочь один раз</button>
+        <button class="button-pay button-pay_disabled payment__ones">
+          Помочь один раз
+        </button>
       </div>
 
       <div class="payment__agreement-container">
         <input id="agree" type="checkbox" class="payment__agree" />
         <label class="payment__agreement-text text-mini" for="agree"
           >Я принимаю правила, изложенные в
-          <a class="payment__agreement-link theme-purple" href="" target="_blank"
+          <a
+            class="payment__agreement-link theme-purple"
+            href=""
+            target="_blank"
             >Соглашении об использовании персональных данных</a
           ></label
         >

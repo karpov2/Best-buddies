@@ -1,13 +1,19 @@
 .payment__email {
   height: 44px;
   border: 2px solid #9397cb;
-  padding-left: 20px;
-  padding-top: 10px;
-  font: normal normal 1.125em/1.33em Helvetica, sans-serif;
+  padding: 3px 0 0 20px;
+  font: normal normal 1.125em Helvetica, sans-serif;
+  outline: none;
 }
 
 .payment__email::placeholder {
-  font: normal normal 1.125em/1.33em Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  /*line-height: 24px;*/
   letter-spacing: 0.5px;
   color: #969696;
+}
+.payment__email:invalid {
+  box-shadow: none;
 }
