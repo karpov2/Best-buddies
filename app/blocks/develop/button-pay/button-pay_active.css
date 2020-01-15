@@ -1,1 +1,4 @@
-.button-pay_active {}
+.button-pay_active {
+  background-color: #5a3f98;
+  border: 1px solid #5a3f98;
+}
