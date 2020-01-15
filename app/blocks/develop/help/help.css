@@ -1,3 +1,5 @@
 .help {
+  background-color: #fff;
   position: relative;
+  z-index: 6;
 }
