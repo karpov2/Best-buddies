@@ -10,9 +10,10 @@ const errors = {
 
 //форма оплаты
 class PaymentForm {
-  constructor(form, widget) {
+  constructor(form, widget, api) {
     this.widget = widget;
     this.form = form;
+    this.api = api;
     this.paymentSum = this.form.querySelectorAll(".payment__sum");
     this.paymentInput = this.form.querySelector(".payment__input-any-sum");
     this.rubleSign = this.form.querySelector(".payment__label-any-sum");
@@ -21,6 +22,8 @@ class PaymentForm {
     this.buttons = this.form.querySelector(".payment__button-pay-container");
     this.buttonMonthly = this.form.querySelector(".payment__monthly");
     this.buttonOnes = this.form.querySelector(".payment__ones");
+    this.progressBar = this.form.querySelector(".payment__how-much");
+    this.progressText = this.form.querySelector(".payment__progress-text");
   }
 
   clearDefaultSum(event) {
@@ -88,19 +91,19 @@ class PaymentForm {
 
     function checkCheckboxSum() {
       const result = Array.from(checkboxSum).find(sum => sum.checked === true);
-      return result ? result.value : false;
+      return !!result;
     }
 
     function checkInputSum() {
-      return inputSum.value > 0 ? inputSum.value : false;
+      return inputSum.value > 0;
     }
 
     function checkName() {
-      return name.validity.valid ? name.value : false;
+      return name.validity.valid;
     }
 
     function checkEmail() {
-      return email.validity.valid ? email.value : false;
+      return email.validity.valid;
     }
 
     function checkAgree() {
@@ -185,12 +188,46 @@ class PaymentForm {
 
     return checkboxSum + inputSum;
   }
+
+  getName() {
+    return "Test";
+  }
+
+  countProgress(sum) {
+    return ((sum / 764536) * 100).toFixed(3);
+  }
 }
+
+//Апи для прогресс бара
+class Api {
+  constructor(options) {
+    this.url = options.url;
+  }
+
+  get(path) {
+    return fetch(`${this.url}/${path}`);
+  }
+}
+
+const api = new Api({
+  url: "https://v2-api.sheety.co/a5ef5d923274b26c584a4e108ade8c58/payment"
+});
 
 const payForm = new PaymentForm(
   document.querySelector(".payment__form"),
-  new cp.CloudPayments()
+  new cp.CloudPayments(),
+  api
 );
+
+payForm.api
+  .get("info")
+  .then(res => res.json())
+  .then(res => res.info)
+  .then(res => {
+    res = res.reduce((res, sum) => res + Number(sum.sum), 0);
+    payForm.progressText.textContent = `Собрали ${res} из 764 536 рублей`;
+    payForm.progressBar.style.width = `${payForm.countProgress(res)}%`;
+  });
 
 payForm.form.addEventListener("input", event => {
   payForm.clearDefaultSum(event);
