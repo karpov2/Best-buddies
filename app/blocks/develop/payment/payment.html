@@ -2,29 +2,82 @@
   <div class="payment__inner">
     <form class="payment__form">
       <div class="payment__types">
-        <input type="radio" name="payment-method" id="payment__method_bank-card" class="payment__method" checked />
-        <label for="payment__method_bank-card" class="payment__type p-bold">Банковская карта</label>
+        <input
+          type="radio"
+          name="payment-method"
+          id="payment__method_bank-card"
+          class="payment__method"
+          checked
+        />
+        <label for="payment__method_bank-card" class="payment__type p-bold"
+          >Банковская карта</label
+        >
 
-        <input type="radio" name="payment-method" id="payment__method_yandex-money" class="payment__method" />
-        <label for="payment__method_yandex-money" class="payment__type p-bold">Яндекс.Деньги</label>
+        <input
+          type="radio"
+          name="payment-method"
+          id="payment__method_yandex-money"
+          class="payment__method"
+        />
+        <label for="payment__method_yandex-money" class="payment__type p-bold"
+          >Яндекс.Деньги</label
+        >
       </div>
 
       <div class="payment__amount">
-        <input id="payment__sum-100" type="radio" value="100" name="payment__sum" class="payment__sum" />
-        <label for="payment__sum-100" class="payment__sum-label text-big">100 &#8381;</label>
+        <input
+          id="payment__sum-100"
+          type="radio"
+          value="100"
+          name="payment__sum"
+          class="payment__sum"
+        />
+        <label for="payment__sum-100" class="payment__sum-label text-big"
+          >100 &#8381;</label
+        >
 
-        <input id="payment__sum-300" type="radio" value="300" name="payment__sum" class="payment__sum" />
-        <label for="payment__sum-300" class="payment__sum-label text-big">300 &#8381;</label>
+        <input
+          id="payment__sum-300"
+          type="radio"
+          value="300"
+          name="payment__sum"
+          class="payment__sum"
+        />
+        <label for="payment__sum-300" class="payment__sum-label text-big"
+          >300 &#8381;</label
+        >
 
-        <input id="payment__sum-500" type="radio" value="500" name="payment__sum" class="payment__sum" checked />
-        <label for="payment__sum-500" class="payment__sum-label text-big">500 &#8381;</label>
+        <input
+          id="payment__sum-500"
+          type="radio"
+          value="500"
+          name="payment__sum"
+          class="payment__sum"
+          checked
+        />
+        <label for="payment__sum-500" class="payment__sum-label text-big"
+          >500 &#8381;</label
+        >
 
-        <input id="payment__sum-1000" type="radio" value="1000" name="payment__sum" class="payment__sum" />
-        <label for="payment__sum-1000" class="payment__sum-label text-big">1000 &#8381;</label>
+        <input
+          id="payment__sum-1000"
+          type="radio"
+          value="1000"
+          name="payment__sum"
+          class="payment__sum"
+        />
+        <label for="payment__sum-1000" class="payment__sum-label text-big"
+          >1000 &#8381;</label
+        >
 
         <label class="payment__sum-any" for="payment__sum-input">
-          <input id="payment__sum-input" type="number" name="payment__suminput" class="payment__input-any-sum"
-            placeholder="Ваша сумма" />
+          <input
+            id="payment__sum-input"
+            type="number"
+            name="payment__suminput"
+            class="payment__input-any-sum"
+            placeholder="Ваша сумма"
+          />
           <span class="text-big payment__label-any-sum">&#8381;</span>
         </label>
       </div>
@@ -32,14 +85,27 @@
       <div class="payment__who">
         <div class="payment__group">
           <label for="name" class="payment__who-label">Ваше имя*</label>
-          <input class="payment__name" type="text" name="name" minlength="2" maxlength="30" required
-            placeholder="Иван Иванов" />
+          <input
+            class="payment__name"
+            type="text"
+            name="name"
+            minlength="2"
+            maxlength="30"
+            required
+            placeholder="Иван Иванов"
+          />
           <p class="error" id="name"></p>
         </div>
 
         <div class="payment__group">
           <label for="email" class="payment__who-label">Ваш e-mail*</label>
-          <input class="payment__email" name="email" type="email" required placeholder="ivanivanov@gmail.com" />
+          <input
+            class="payment__email"
+            name="email"
+            type="email"
+            required
+            placeholder="ivanivanov@gmail.com"
+          />
           <p class="error" id="email"></p>
         </div>
       </div>
@@ -51,21 +117,35 @@
       </p>
 
       <div class="payment__button-pay-container">
-        <button type="submit" name="buttonMonthly" class="button-pay payment__monthly">
+        <button
+          type="submit"
+          name="buttonMonthly"
+          class="button-pay payment__monthly"
+        >
           Хочу помогать ежемесячно
         </button>
-        <button type="submit" name="buttonOnes" class="button-pay payment__ones">
+        <button
+          type="submit"
+          name="buttonOnes"
+          class="button-pay payment__ones"
+        >
           Помочь один раз
         </button>
       </div>
 
       <div class="payment__agreement-container">
-        <label class="payment__agree-label text-mini">Я принимаю правила, изложенные в
+        <label class="payment__agree-label text-mini"
+          >Я принимаю правила, изложенные в
           <input type="checkbox" name="payment__agree" class="payment__agree" />
           <span class="payment__checkmark"></span>
 
-          <a class="payment__agreement-link theme-purple" href="" target="_blank">Соглашении об использовании
-            персональных данных</a></label>
+          <a
+            class="payment__agreement-link theme-purple"
+            href=""
+            target="_blank"
+            >Соглашении об использовании персональных данных</a
+          ></label
+        >
       </div>
 
       <div class="payment__progress">
