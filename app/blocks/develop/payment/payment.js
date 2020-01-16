@@ -18,6 +18,7 @@ class PaymentForm {
     this.rubleSign = this.form.querySelector(".payment__label-any-sum");
     this.name = this.form.querySelector(".payment__name");
     this.email = this.form.querySelector(".payment__email");
+    this.buttons = this.form.querySelector(".payment__button-pay-container");
     this.buttonMonthly = this.form.querySelector(".payment__monthly");
     this.buttonOnes = this.form.querySelector(".payment__ones");
   }
@@ -112,36 +113,31 @@ class PaymentForm {
       checkEmail() &&
       checkAgree()
     ) {
-      this.buttonMonthly.removeAttribute("disabled");
-      this.buttonMonthly.classList.add("payment__monthly_active");
-
-      this.buttonOnes.removeAttribute("disabled");
-      this.buttonOnes.classList.add("payment__ones_active");
+      this.activateButtons();
     } else {
-      this.buttonMonthly.setAttribute("disabled", true);
-      this.buttonMonthly.classList.remove("payment__monthly_active");
-
-      this.buttonOnes.removeAttribute("disabled");
-      this.buttonOnes.classList.remove("payment__ones_active");
+      this.disableButtons();
     }
   }
 
   openPaymentForm(event) {
     event.preventDefault();
 
-    const widget = () => {
+    if (
+      event.target.classList.contains("payment__monthly_active") ||
+      event.target.classList.contains("payment__ones_active")
+    ) {
       this.widget.charge(
         {
           // options
-          publicId: "test_api_00000000000000000000001", //id из личного кабинета
-          description: "Пример оплаты (деньги сниматься не будут)", //назначение
-          amount: 10, //сумма
-          currency: "RUB", //валюта
-          invoiceId: "1234567", //номер заказа  (необязательно)
-          accountId: "user@example.com", //идентификатор плательщика (необязательно)
-          skin: "mini", //дизайн виджета
+          publicId: "test_api_00000000000000000000001",
+          description: "Пример оплаты (деньги сниматься не будут)",
+          amount: this.getAmount(),
+          currency: "RUB",
+          invoiceId: "1234567",
+          accountId: `${this.getEmail()}`,
+          skin: "mini",
           data: {
-            myProp: "myProp value" //произвольный набор параметров
+            myProp: "myProp value"
           }
         },
         function(options) {
@@ -153,21 +149,41 @@ class PaymentForm {
           //действие при неуспешной оплате
         }
       );
-    };
-
-    if (event.target.classList.contains("payment__monthly")) {
-      console.log("payment__monthly");
-      widget();
-    } else if(event.target.classList.contains("payment__ones")) {
-      console.log("payment__ones");
-      widget();
     }
+  }
 
-    console.dir(this);
-    console.dir(event.target);
-    const {buttonMonthly, buttonOnes} = this.form.elements;
-    console.log(buttonMonthly);
-    console.log(buttonOnes);
+  activateButtons() {
+    this.buttonMonthly.removeAttribute("disabled");
+    this.buttonMonthly.classList.add("payment__monthly_active");
+
+    this.buttonOnes.removeAttribute("disabled");
+    this.buttonOnes.classList.add("payment__ones_active");
+  }
+
+  disableButtons() {
+    this.buttonMonthly.setAttribute("disabled", true);
+    this.buttonMonthly.classList.remove("payment__monthly_active");
+
+    this.buttonOnes.removeAttribute("disabled");
+    this.buttonOnes.classList.remove("payment__ones_active");
+  }
+
+  getEmail() {
+    return this.email.value;
+  }
+
+  getAmount() {
+    let checkboxSum = Array.from(this.paymentSum).find(
+      sum => sum.checked === true
+    );
+
+    checkboxSum = checkboxSum ? Number(checkboxSum.value) : 0;
+
+    let inputSum = this.paymentInput.value
+      ? Number(this.paymentInput.value)
+      : 0;
+
+    return checkboxSum + inputSum;
   }
 }
 
@@ -188,14 +204,6 @@ payForm.form.addEventListener("focusout", event => {
   payForm.setDefaultNameOrEmailInput(event);
 });
 
-// payForm.form.addEventListener("submit", event => {
-//   payForm.openPaymentForm(event);
-// });
-
-document.querySelector(".payment__form").addEventListener("click", event => {
+payForm.buttons.addEventListener("click", event => {
   payForm.openPaymentForm(event);
 });
-
-// document.querySelector(".button-pay").addEventListener("submit", event => {
-//   payForm.openPaymentForm(event);
-// });
