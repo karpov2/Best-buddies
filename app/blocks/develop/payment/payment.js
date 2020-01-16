@@ -129,39 +129,45 @@ class PaymentForm {
   openPaymentForm(event) {
     event.preventDefault();
 
-    if (event.target.classList.contains("button-pay")) {
-      console.log("Hello");
+    const widget = () => {
+      this.widget.charge(
+        {
+          // options
+          publicId: "test_api_00000000000000000000001", //id из личного кабинета
+          description: "Пример оплаты (деньги сниматься не будут)", //назначение
+          amount: 10, //сумма
+          currency: "RUB", //валюта
+          invoiceId: "1234567", //номер заказа  (необязательно)
+          accountId: "user@example.com", //идентификатор плательщика (необязательно)
+          skin: "mini", //дизайн виджета
+          data: {
+            myProp: "myProp value" //произвольный набор параметров
+          }
+        },
+        function(options) {
+          // success
+          //действие при успешной оплате
+        },
+        function(reason, options) {
+          // fail
+          //действие при неуспешной оплате
+        }
+      );
+    };
+
+    if (event.target.classList.contains("payment__monthly")) {
+      console.log("payment__monthly");
+      widget();
+    } else if(event.target.classList.contains("payment__ones")) {
+      console.log("payment__ones");
+      widget();
     }
 
-    console.log(this);
+    console.dir(this);
     console.dir(event.target);
-    const {buttonMonthly, buttonOnes} = event.target.elements;
+    const {buttonMonthly, buttonOnes} = this.form.elements;
     console.log(buttonMonthly);
     console.log(buttonOnes);
-
-    this.widget.charge(
-      {
-        // options
-        publicId: "test_api_00000000000000000000001", //id из личного кабинета
-        description: "Пример оплаты (деньги сниматься не будут)", //назначение
-        amount: 10, //сумма
-        currency: "RUB", //валюта
-        invoiceId: "1234567", //номер заказа  (необязательно)
-        accountId: "user@example.com", //идентификатор плательщика (необязательно)
-        skin: "mini", //дизайн виджета
-        data: {
-          myProp: "myProp value" //произвольный набор параметров
-        }
-      },
-      function(options) {
-        // success
-        //действие при успешной оплате
-      },
-      function(reason, options) {
-        // fail
-        //действие при неуспешной оплате
-      }
-    );
   }
 }
 
@@ -182,10 +188,14 @@ payForm.form.addEventListener("focusout", event => {
   payForm.setDefaultNameOrEmailInput(event);
 });
 
-payForm.form.addEventListener("submit", event => {
+// payForm.form.addEventListener("submit", event => {
+//   payForm.openPaymentForm(event);
+// });
+
+document.querySelector(".payment__form").addEventListener("click", event => {
   payForm.openPaymentForm(event);
 });
 
-document.querySelector(".button-pay").addEventListener("submit", event => {
-  payForm.openPaymentForm(event);
-});
+// document.querySelector(".button-pay").addEventListener("submit", event => {
+//   payForm.openPaymentForm(event);
+// });
