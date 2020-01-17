@@ -32,6 +32,7 @@ class Api {
 
 //форма оплаты
 class PaymentForm {
+
   constructor(form, widget, api) {
     this.widget = widget;
     this.form = form;
