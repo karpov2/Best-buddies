@@ -161,8 +161,8 @@ class PaymentForm {
         }
         
         this.api
-            .post({
-                name: "test",
+            .post('info',{
+                name: this.getName(),
                 email: this.getEmail(),
                 sum: this.getAmount()
             });
@@ -218,14 +218,20 @@ class Api {
 	}
 
 	get(path) {
-		return fetch(`${this.url}/${path}`);
+		return fetch(`${this.url}/${path}`), {
+            method: 'GET',
+            headers: {
+                Authorization: 'igor:789456',
+                'Content-Type': 'application/json',
+            }
+        };
     }
     
     post(path, body) {
         return fetch(`${this.url}/${path}`, {
             method: 'POST',
             headers: {
-                // authorization: '',
+                Authorization: 'igor:789456',
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(body)
