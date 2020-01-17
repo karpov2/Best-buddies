@@ -162,11 +162,9 @@ class PaymentForm {
         
         this.api
             .post({
-                info: {
-                    name: "test",
-                    email: this.getEmail(),
-                    sum: this.getAmount()
-                }
+                name: "test",
+                email: this.getEmail(),
+                sum: this.getAmount()
             });
 	}
 
