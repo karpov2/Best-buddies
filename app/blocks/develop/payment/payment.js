@@ -220,19 +220,13 @@ class Api {
 	}
 
 	get(path) {
-		return fetch(`${this.url}/${path}`, {
-            method: 'GET',
-            headers: {
-                Authorization: 'trololo'
-            },
-        });
+		return fetch(`${this.url}/${path}`);
     }
     
     post(path, body) {
         return fetch(`${this.url}/${path}`, {
             method: 'POST',
             headers: {
-                Authorization: 'trololo',
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(body)
