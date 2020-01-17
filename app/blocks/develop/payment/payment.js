@@ -162,9 +162,11 @@ class PaymentForm {
         
         this.api
             .post('info',{
-                name: this.getName(),
-                email: this.getEmail(),
-                sum: this.getAmount()
+                info: {
+                    name: this.getName(),
+                    email: this.getEmail(),
+                    sum: this.getAmount()
+                }
             });
 	}
 
@@ -218,20 +220,19 @@ class Api {
 	}
 
 	get(path) {
-		return fetch(`${this.url}/${path}`), {
+		return fetch(`${this.url}/${path}`, {
             method: 'GET',
             headers: {
-                Authorization: 'igor:789456',
-                'Content-Type': 'application/json',
-            }
-        };
+                Authorization: 'trololo'
+            },
+        });
     }
     
     post(path, body) {
         return fetch(`${this.url}/${path}`, {
             method: 'POST',
             headers: {
-                Authorization: 'igor:789456',
+                Authorization: 'trololo',
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(body)
