@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title>Лучшие друзья</title>
+    <meta name="description" content="Фонд «Лучшие друзья» помогает людям с нарушениями развития и интеллекта познакомиться и подружиться со сверстниками без инвалидности, устроиться на достойную работу, начать самостоятельную жизнь." />
+    <link rel="stylesheet" href="./styles/app.min.css?v=1579267332934">
+    <link rel="shortcut icon" href="./favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments"></script>
+  </head>
+  <body>
+    <div class="app">
+      <!-- Шапка -->
+      <header class="header app__wrapper header_sticky" id="header">
+        <div class="app__layout header__inner">
+          <div class="header__column">
+            <a href="#" class="logo header__logo">
+              <svg class="logo__image">
+                <use xlink:href="./styles/img/symbol.svg#logo__logotype"></use>
+              </svg>
+            </a>
+            <div class="name-fond header__name">
+              <p class="name-fond__title">Лучшие <span class="name-fond__bold">друзья</span><br class="name-fond__title-br">Best <span class="name-fond__bold">buddies</span> Russia</p>
+              <p class="name-fond__desc header_name-fond-desc">Фонд поддержки лиц с нарушениями развития и интеллекта</p>
+            </div>
+          </div>
+          <div class="header__column">
+            <div class="share header__share">
+              <div class="smm header__smm smm_disabled">
+                <a href="" class="smm__link" target="_blank">
+                  <svg class="smm__image">
+                    <use xlink:href="./styles/img/symbol.svg#smm__twitter"></use>
+                  </svg>
+                </a>
+                <a href="" class="smm__link" target="_blank">
+                  <svg class="smm__image">
+                    <use xlink:href="./styles/img/symbol.svg#smm__vk"></use>
+                  </svg>
+                </a>
+                <a href="" class="smm__link" target="_blank">
+                  <svg class="smm__image">
+                    <use xlink:href="./styles/img/symbol.svg#smm__fb"></use>
+                  </svg>
+                </a>
+                <a class="smm__link">
+                  <svg class="smm__image" onclick="myFunction()">
+                    <use xlink:href="./styles/img/symbol.svg#smm__copy-link"></use>
+                  </svg>
+                </a>
+                <input type="text" value="https://ru.bem.info/" class="help__input" />
+              </div>
+              <svg class="share__image">
+                <use xlink:href="./styles/img/symbol.svg#share__share"></use>
+              </svg>
+            </div>
+            <a class="button" href="#payment">Помочь</a>
+          </div>
+        </div>
+      </header>
+      <section class="lead app__wrapper">
+        <div class="app__layout lead__inner">
+          <div class="lead__container">
+            <p class="lead__paragraph text-paragraph"> Фонд «Лучшие друзья» проводит регулярные занятия по футболу и волейболу для людей с нарушением развития и без. Постоянные занятия требуют регулярных расходов. <span class="text-span">Поэтому нужна ваша помощь.</span>
+            </p>
+            <p class="lead__paragraph text-paragraph"> Чтобы у ребят была возможность тренироваться в течение года, <span class="text-span">необходимо собрать 765 536 руб.</span>
+            </p>
+          </div>
+          <div class="lead__video">
+            <button class="lead__button">&#9658; &nbsp;Смотреть видео</button>
+            <img src="./static/lead/lead.jpg" alt="" class="lead__image" />
+          </div>
+        </div>
+      </section>
+      <main class="main">
+        <section class="goal app__wrapper">
+          <div class="app__layout goal__inner">
+            <div class="goal__about">
+              <img src="./static/goal/anton.jpg" alt="" class="goal__image" />
+              <div class="goal__container">
+                <p class="goal__paragraph text-paragraph"> У Антона фенилкетонурия – редкое наследственное заболевание, из-за которого у молодого человека появилось нарушение развития. После окончания учебы единственным спортивным мероприятием для него стала зарядка по утрам. </p>
+                <p class="goal__paragraph text-paragraph"> Мама Антона Ирина долго искала командные занятия, на которые берут людей с ментальной инвалидностью, но безуспешно. И Антон стал коротать время за просмотром спортивных передач, мечтая однажды оказаться на поле. </p>
+                <p class="goal__paragraph text-paragraph"> Все изменилось, когда фонд «Лучшие друзья» начал проводить регулярные занятия по футболу и волейболу для людей с нарушением развития и без. </p>
+              </div>
+            </div>
+            <div class="goal__about">
+              <div class="goal__container">
+                <h2 class="goal__title">Игра, доступная каждому</h2>
+                <p class="goal__paragraph text-paragraph"> Многие участники фонда до начала тренировок даже не знали, что они могут заниматься спортом на равных с волонтерами. Спорт для большинства из них был физкультурой в школе. Закончилась школа – закончился и спорт. Так размышлял и Антон Карамышев. </p>
+                <p class="goal__paragraph text-paragraph"> Теперь Антон не пропускает ни одной тренировки: здесь у него появились новые товарищи и любимое увлечение. «Мне нравится играть, – рассказывает Антон. – Я чувствую себя намного лучше, когда моя команда побеждает. Моя команда – это мои друзья». </p>
+              </div>
+              <img src="./static/goal/anton-second.jpg" alt="" class="goal__image" />
+            </div>
+            <div class="goal__about">
+              <img src="./static/goal/anton-third.jpg" alt="" class="goal__image" />
+              <div class="goal__container">
+                <h2 class="goal__title">Вместе к спортивным успехам</h2>
+                <p class="goal__paragraph text-paragraph"> Ирина, мама Антона, отмечает: «Я вижу, как сильно сын изменился за этот год. Он стал более общительным и уверенным в себе. <span class="text-span">Спорт мотивирует</span> его двигаться к новым победам, и после каждой тренировки я радуюсь вместе с ним». </p>
+                <p class="goal__paragraph text-paragraph"> Уже год ребята с нарушением развития и интеллекта собираются вместе раз в неделю и весело проводят время. Во время игры не важно, есть ли у тебя инвалидность или нет, новичок ты или опытный игрок: <span class="text-span">«Лучшие друзья» всегда поддерживают друг друга.</span>
+                </p>
+              </div>
+            </div>
+            <div class="goal__about">
+              <div class="goal__container">
+                <h2 class="goal__title">Спорт = дружба</h2>
+                <p class="goal__paragraph text-paragraph"> «Спорт помогает мне быть здоровым и счастливым», «Классно давать пас своему другу», «Когда я бегу, я чувствую себя героем фильма», – так участники фонда «Лучшие друзья» рассказывают про совместные тренировки по футболу и волейболу. </p>
+                <p class="goal__paragraph text-paragraph">
+                  <span class="text-span">Антону и его новым друзьям важны тренировки</span>, так как это способ для них выйти из дома и оказаться в компании людей, которые всегда помогут и поддержат. Также <span class="text-span">тренировки помогают ребятам</span> лучше понять свое тело и не терять форму, которую некоторым сложно поддерживать из-за особенностей здоровья. </p>
+              </div>
+              <img src="./static/goal/anton-fourth.jpg" alt="" class="goal__image" />
+            </div>
+          </div>
+        </section>
+        <!-- Слайдер -->
+        <section class="slideshow app__wrapper">
+          <div class="app__layout slideshow__inner">
+            <div class="slideshow__slider">
+              <div class="slideshow__slide fade">
+                <img src="./static/slideshow/slide1.jpg" alt="" class="slideshow__image" />
+              </div>
+              <div class="slideshow__slide fade">
+                <img src="./static/slideshow/slide2.jpg" alt="" class="slideshow__image" />
+              </div>
+              <div class="slideshow__slide fade">
+                <img src="./static/slideshow/slide3.jpg" alt="" class="slideshow__image" />
+              </div>
+              <div class="slideshow__slide fade">
+                <img src="./static/slideshow/slide4.jpg" alt="" class="slideshow__image" />
+              </div>
+              <div class="slideshow__dots">
+                <img src="./static/slideshow/arrow-before.svg" class="slideshow__prev slideshow__arrow" onclick="plusSlides(-1)" />
+                <span class="slideshow__dot" onclick="currentSlide(1)"></span>
+                <span class="slideshow__dot" onclick="currentSlide(2)"></span>
+                <span class="slideshow__dot" onclick="currentSlide(3)"></span>
+                <span class="slideshow__dot" onclick="currentSlide(4)"></span>
+                <img src="./static/slideshow/arrow-next.svg" class="slideshow__next slideshow__arrow" onclick="plusSlides(1)" />
+              </div>
+            </div>
+            <div class="slideshow__container">
+              <p class="slideshow__paragraph text-paragraph"> Ваша помощь — это возможность людям с&nbsp;ментальной инвалидностью стать чемпионами, не так, как принято в&nbsp;обществе, а для самих себя, своих родных и друзей. </p>
+              <p class="slideshow__paragraph text-paragraph"> Ведь каждому, независимо от инвалидности, так важно найти дело, которое помогает жить и не чувствовать себя «чужим». </p>
+              <p class="slideshow__paragraph text-big"> Давайте поможем ребятам с нарушениями развития вместе! </p>
+            </div>
+          </div>
+        </section>
+        <!-- Смета -->
+        <section class="estimate">
+          <div class="app__layout estimate__inner">
+            <p class="estimate__big estimate__desc">Годовой бюджет на проведение регулярных тренировок по футболу и волейболу для ребят с нарушением развития</p>
+            <div class="estimate__budget">764 536 &#8381;</div>
+            <div class="estimate__container">
+              <table class="estimate__table">
+                <thead class="estimate__table-head">
+                  <tr class="estimate__table-row">
+                    <th class="estimate__big estimate__title" scope="row" colspan="2">Проведение занятий по футболу</th>
+                  </tr>
+                </thead>
+                <tbody class="estimate__table-body">
+                  <tr class="estimate__table-row estimate__row">
+                    <td class="estimate__lesson estimate__name">Аренда зала</td>
+                    <td class="estimate__lesson estimate__cost">240&#160;000&#160;&#8381;</td>
+                  </tr>
+                  <tr class="estimate__table-row estimate__row">
+                    <td class="estimate__lesson estimate__name">Инвентарь</td>
+                    <td class="estimate__lesson estimate__cost">5&#160;000&#160;&#8381;</td>
+                  </tr>
+                  <tr class="estimate__table-row estimate__row">
+                    <td class="estimate__lesson estimate__name">Зарплата тренеров</td>
+                    <td class="estimate__lesson estimate__cost">108&#160;000&#160;&#8381;</td>
+                  </tr>
+                  <tr class="estimate__table-row estimate__row">
+                    <td class="estimate__lesson estimate__name">Страховые взносы 27,1%</td>
+                    <td class="estimate__lesson estimate__cost">29&#160;268&#160;&#8381;</td>
+                  </tr>
+                  <tr class="estimate__table-row">
+                    <td class="estimate__dotted-line" colspan="2"></td>
+                  </tr>
+                  <tr class="estimate__table-row">
+                    <td class="estimate__big estimate__total-cost" colspan="2">382 268 &#8381;</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="estimate__table">
+                <thead class="estimate__table-head">
+                  <tr class="estimate__table-row">
+                    <th class="estimate__big estimate__title" scope="row" colspan="2">Проведение занятий по футболу</th>
+                  </tr>
+                </thead>
+                <tbody class="estimate__table-body">
+                  <tr class="estimate__table-row estimate__row">
+                    <td class="estimate__lesson estimate__name">Аренда зала</td>
+                    <td class="estimate__lesson estimate__cost">240&#160;000&#160;&#8381;</td>
+                  </tr>
+                  <tr class="estimate__table-row estimate__row">
+                    <td class="estimate__lesson estimate__name">Инвентарь</td>
+                    <td class="estimate__lesson estimate__cost">5&#160;000&#160;&#8381;</td>
+                  </tr>
+                  <tr class="estimate__table-row estimate__row">
+                    <td class="estimate__lesson estimate__name">Зарплата тренеров</td>
+                    <td class="estimate__lesson estimate__cost">108&#160;000&#160;&#8381;</td>
+                  </tr>
+                  <tr class="estimate__table-row estimate__row">
+                    <td class="estimate__lesson estimate__name">Страховые взносы 27,1%</td>
+                    <td class="estimate__lesson estimate__cost">29&#160;268&#160;&#8381;</td>
+                  </tr>
+                  <tr class="estimate__table-row">
+                    <td class="estimate__dotted-line" colspan="2"></td>
+                  </tr>
+                  <tr class="estimate__table-row">
+                    <td class="estimate__big estimate__total-cost" colspan="2">382 268 &#8381;</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <!--  -->
+        <section class="payment app__wrapper" id="payment">
+          <div class="payment__inner">
+            <form class="payment__form">
+              <div class="payment__types">
+                <input type="radio" name="payment-method" id="payment__method_bank-card" class="payment__method" checked />
+                <label for="payment__method_bank-card" class="payment__type p-bold">Банковская карта</label>
+                <input type="radio" name="payment-method" id="payment__method_yandex-money" class="payment__method" />
+                <label for="payment__method_yandex-money" class="payment__type p-bold">Яндекс.Деньги</label>
+              </div>
+              <div class="payment__amount">
+                <input id="payment__sum-100" type="radio" value="100" name="payment__sum" class="payment__sum" />
+                <label for="payment__sum-100" class="payment__sum-label text-big">100 &#8381;</label>
+                <input id="payment__sum-300" type="radio" value="300" name="payment__sum" class="payment__sum" />
+                <label for="payment__sum-300" class="payment__sum-label text-big">300 &#8381;</label>
+                <input id="payment__sum-500" type="radio" value="500" name="payment__sum" class="payment__sum" checked />
+                <label for="payment__sum-500" class="payment__sum-label text-big">500 &#8381;</label>
+                <input id="payment__sum-1000" type="radio" value="1000" name="payment__sum" class="payment__sum" />
+                <label for="payment__sum-1000" class="payment__sum-label text-big">1000 &#8381;</label>
+                <label class="payment__sum-any" for="payment__sum-input">
+                  <input id="payment__sum-input" type="number" name="payment__suminput" class="payment__input-any-sum" placeholder="Ваша сумма" />
+                  <span class="text-big payment__label-any-sum">&#8381;</span>
+                </label>
+              </div>
+              <div class="payment__who">
+                <div class="payment__group">
+                  <label for="name" class="payment__who-label">Ваше имя*</label>
+                  <input class="payment__name" type="text" name="name" minlength="2" maxlength="30" required placeholder="Иван Иванов" />
+                  <p class="error" id="name"></p>
+                </div>
+                <div class="payment__group">
+                  <label for="email" class="payment__who-label">Ваш e-mail*</label>
+                  <input class="payment__email" name="email" type="email" required placeholder="ivanivanov@gmail.com" />
+                  <p class="error" id="email"></p>
+                </div>
+              </div>
+              <p class="payment__paragraph text-mini"> Оба поля обязательны для заполнения. Эти данные нам нужны только для того, чтобы знать, кого благодарить и куда отправить уведомление о получении пожертвования </p>
+              <div class="payment__button-pay-container">
+                <button type="submit" name="buttonMonthly" class="button-pay payment__monthly" disabled> Хочу помогать ежемесячно </button>
+                <button type="submit" name="buttonOnes" class="button-pay payment__ones" disabled> Помочь один раз </button>
+              </div>
+              <div class="payment__agreement-container">
+                <label class="payment__agree-label text-mini">Я принимаю правила, изложенные в <input type="checkbox" name="payment__agree" class="payment__agree" />
+                  <span class="payment__checkmark"></span>
+                  <a class="payment__agreement-link theme-purple" href="" target="_blank">Соглашении об использовании персональных данных</a></label>
+              </div>
+              <div class="payment__progress">
+                <div class="payment__progress-bar">
+                  <div class="payment__how-much"></div>
+                </div>
+                <p class="payment__progress-text text-big theme-orange"> Собрали <span id="payment__progress-sum">0</span> из <span id="payment__progress-total-sum">764 536</span> рублей </p>
+              </div>
+            </form>
+            <img src="./static/payment/game.png" alt="" class="payment__image" />
+          </div>
+        </section>
+        <section class="coach app__wrapper">
+          <div class="app__layout coach__inner">
+            <div class="coach__containers">
+              <div class="coach__container">
+                <img src="./static/coach/yaroslav.jpg" alt="" class="coach__image" />
+                <div class="coach__about">
+                  <h2 class="coach__paragraph text-big theme-purple"> Ярослав Беляков, тренер по волейболу: </h2>
+                  <p class="coach__paragraph text-paragraph"> Нашим ребятам очень нужен спорт, как и любым другим городским жителям. Но не так уж просто взять и заняться им, особенно если сам не осознаешь эту необходимость. А вот у нас ребята могут хотя бы раз в неделю как следует размяться и потренироваться. К тому же каждый старается и выкладывается на полную, чтобы не подводить остальных, поэтому игры получаются азартными напряженными и интересными. </p>
+                </div>
+              </div>
+              <div class="coach__container">
+                <img src="./static/coach/islam.jpg" alt="" class="coach__image" />
+                <div class="coach__about">
+                  <h2 class="coach__paragraph text-big theme-purple"> Ислам Юсупов, тренер по футболу: </h2>
+                  <p class="coach__paragraph text-paragraph"> Футбольные занятия для ребят - это не столько способ достичь определенных достижений в спорте, сколько возможность регулярно видеться с друзьями за общим хобби и проводить время с пользой. Занятия помогают ребятам найти поддержку и понимание в результате командной работы. В процессе тренировок зарождается дружба, которая помогает перестать чувствовать себя одиноким. </p>
+                </div>
+              </div>
+              <div class="coach__container">
+                <img src="./static/coach/diana.jpg" alt="" class="coach__image" />
+                <div class="coach__about">
+                  <h2 class="coach__paragraph text-big theme-purple"> Диана Анищенко, тренер по волейболу: </h2>
+                  <p class="coach__paragraph text-paragraph"> Мне нравится, как ребята вместе радуются победам и приободряют друг друга в случае неудачи. Я наблюдаю, как они учатся друг у друга правильно играть и помогают более слабым игрокам. </p>
+                  <p class="coach__paragraph text-paragraph"> Регулярные тренировки дают участникам фонда возможность не только заниматься спортом, но и найти поддержку, которой им не хватает. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--  -->
+        <section class="help app__wrapper">
+          <div class="app__layout help__inner">
+            <p class="help__paragraph text-paragraph"> Помочь ребятам с нарушением развития и интеллекта заниматься спортом можно не только пожертвованиями. По всем вопросам помощи обращайтесь к координатору проекта: <a class="help__mailto text-big theme-purple" href="mailto:diana@bestbuddies.ru">diana@bestbuddies.ru</a>
+            </p>
+            <div class="help__container">
+              <div class="help__type">
+                <img src="./static/help/rooms.png" alt="" class="help__image" />
+                <p class="help__how text-big theme-orange"> Помочь с&nbsp;помещением для&nbsp;занятий </p>
+              </div>
+              <div class="help__type">
+                <img src="./static/help/different.png" alt="" class="help__image" />
+                <p class="help__how text-big theme-orange"> Подарить инвентарь </p>
+              </div>
+              <div class="help__type">
+                <img src="./static/help/volunteers.png" alt="" class="help__image" />
+                <p class="help__how text-big theme-orange"> Стать спортивным волонтёром </p>
+              </div>
+              <div class="help__type">
+                <img src="./static/help/partnership.png" alt="" class="help__image" />
+                <p class="help__how text-big theme-orange">Стать партнёром проекта</p>
+              </div>
+            </div>
+            <p class="help__paragraph text-paragraph"> Расскажите о проекте друзьям и знакомым в социальных сетях: </p>
+            <div class="smm">
+              <a href="" class="smm__link" target="_blank">
+                <svg class="smm__image">
+                  <use xlink:href="./styles/img/symbol.svg#smm__twitter"></use>
+                </svg>
+              </a>
+              <a href="" class="smm__link" target="_blank">
+                <svg class="smm__image">
+                  <use xlink:href="./styles/img/symbol.svg#smm__vk"></use>
+                </svg>
+              </a>
+              <a href="" class="smm__link" target="_blank">
+                <svg class="smm__image">
+                  <use xlink:href="./styles/img/symbol.svg#smm__fb"></use>
+                </svg>
+              </a>
+              <a class="smm__link">
+                <svg class="smm__image" onclick="myFunction()">
+                  <use xlink:href="./styles/img/symbol.svg#smm__copy-link"></use>
+                </svg>
+              </a>
+              <input type="text" value="https://ru.bem.info/" class="help__input" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Подвал -->
+      <footer class="footer app__wrapper">
+        <div class="app__layout footer__inner">
+          <div class="footer__column">
+            <a href="#" class="logo footer__logo">
+              <svg class="logo__image">
+                <use xlink:href="./styles/img/symbol.svg#logo__logotype"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__column footer__column_center">
+            <div class="footer__contact">
+              <p class="footer__address">115114, Москва, ул. Летниковская, дом 11/10, строение 5, подъезд №1 (в бизнес-центре «Capital House»)</p>
+              <a class="link footer__phone" href="tel:+74957253982"><b>+7(495)725-39-82</b></a>
+              <a class="link footer__email" href="mailto:office@bestbuddies.ru"><b>office@bestbuddies.ru</b></a>
+            </div>
+            <div class="footer__social">
+              <div class="name-fond footer_name-fond">
+                <p class="name-fond__title">Лучшие <span class="name-fond__bold">друзья</span><br class="name-fond__title-br">Best <span class="name-fond__bold">buddies</span> Russia</p>
+                <p class="name-fond__desc footer__name-fond-desc">Фонд поддержки лиц с нарушениями развития и интеллекта</p>
+              </div>
+            </div>
+            <div class="smm footer__smm">
+              <a href="" class="smm__link footer_smm-link" target="_blank">
+                <svg class="smm__image smm__image_black">
+                  <use xlink:href="./styles/img/symbol.svg#smm__vk"></use>
+                </svg>
+              </a>
+              <a href="" class="smm__link footer_smm-link" target="_blank">
+                <svg class="smm__image smm__image_black">
+                  <use xlink:href="./styles/img/symbol.svg#smm__fb"></use>
+                </svg>
+              </a>
+              <a href="" class="smm__link footer_smm-link" target="_blank">
+                <svg class="smm__image smm__image_black">
+                  <use xlink:href="./styles/img/symbol.svg#smm__youtube"></use>
+                </svg>
+              </a>
+              <a href="" class="smm__link footer_smm-link">
+                <svg class="smm__image smm__image_black" onclick="myFunction()">
+                  <use xlink:href="./styles/img/symbol.svg#smm__instagram"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__column footer__column_right">
+            <a class="button button_type_solid footer__button" href="#payment">Помочь</a>
+            <a href="#header" class="footer__arrow-up">
+              <svg class="footer__arrow-up-image">
+                <use xlink:href="./styles/img/symbol.svg#footer__arrow-up"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./scripts/app.min.js?v=1579267332934"></script>
+  </body>
+</html>
